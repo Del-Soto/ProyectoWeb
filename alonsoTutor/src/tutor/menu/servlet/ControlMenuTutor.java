@@ -40,19 +40,27 @@ private static final long serialVersionUID = 1L;
 				response.setContentType("text/html");
 				response.setCharacterEncoding("UTF-8");
 				
-				String respuesta = (String) request.getParameter("buscarTutor");
+				String respuesta = (String) request.getParameter("buscarTutorN");
+				String respuesta1 = (String) request.getParameter("buscarTutorA");
 				String respuesta2 = (String) request.getParameter("eliminarTutor");
 				String respuesta3 = (String) request.getParameter("registrarTutor");
 				String respuesta4 = (String) request.getParameter("modificarTutor");
 				
 				
-				if(respuesta != null) {
+				if(respuesta != null || respuesta =="Buscar tutor por nombre") {
 					
 					rd = request.getRequestDispatcher("buscarTutor.jsp");
 					codigo = -1;
 					misession.setAttribute("codigo", codigo);
 					rd.forward(request, response);
 					
+				}
+				else if(respuesta1 != null)
+				{
+					rd = request.getRequestDispatcher("buscarTutorApellido.jsp");
+					codigo = -1;
+					misession.setAttribute("codigo", codigo);
+					rd.forward(request, response);
 				}
 				else if(respuesta2 != null)
 				{

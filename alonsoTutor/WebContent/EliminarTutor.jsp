@@ -24,7 +24,7 @@
           <br>
 
           <input type="submit" name="eliminar" value="eliminar">
-          <input type="submit" name="Cancelar" value="Cancelar" <a href="index.html"></a> >
+          
 
 
         </form>

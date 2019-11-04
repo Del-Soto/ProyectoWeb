@@ -175,5 +175,44 @@ public class TutorDao extends BDConnection{
 	}
 	
 
+	public Tutor buscarTutorApelllido(Tutor tutor1) {
+		
+		Tutor tutor4 = new Tutor();
+		
+		try {
+			
+			getConnection();
+			if (connection != null) {
+				
+				String query ="SELECT * FROM tutor2 WHERE apellido1 = (?)";
+				PreparedStatement preparedStatement = connection.prepareStatement(query);
+				preparedStatement.setString(1, tutor1.getPrimerapellido());
+				ResultSet rs = preparedStatement.executeQuery();
+				
+				//System.out.println("Numero de coincidencias: " + rs.getRow());
+				if (rs.getRow() >= 0) {
+					if (rs.next()) {
+						tutor4.setNombre(rs.getNString("nombre"));
+						tutor4.setPrimerapellido(rs.getString(3));
+						tutor4.setSegundoapellido(rs.getString(4));
+						tutor4.setCodigo(1);
+					}
+				} else {
+					tutor4.setCodigo(-1);// Error
+				}
+				
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		cerrrarConexion();
+		
+		return tutor4;
+		
+		
+	}
+	
+
 }
+
 

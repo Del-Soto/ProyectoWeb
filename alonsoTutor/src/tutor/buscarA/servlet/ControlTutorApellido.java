@@ -1,4 +1,4 @@
-package tutor.buscar.servlet;
+package tutor.buscarA.servlet;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -15,13 +15,13 @@ import modificar.tutor.beans.Tutor;
 import modificar.tutor.bs.TutorBs;
 import modificar.tutor.dao.BDConnection;
 import modificar.tutor.dao.TutorDao;
-@WebServlet("/buscaTutor")
+@WebServlet("/buscaTutorApellido")
 
 
-public class ControlTutor extends HttpServlet{
+public class ControlTutorApellido extends HttpServlet{
 	
 	private static final long serialVersionUID = 1L;
-	public ControlTutor() {
+	public ControlTutorApellido() {
 		
 		super();
 		
@@ -38,7 +38,7 @@ public class ControlTutor extends HttpServlet{
 		response.setContentType("text/html");
 		response.setCharacterEncoding("UTF-8");
 		
-		String nombreTutor = (String) request.getParameter("tutor.Nombre");
+		String apellidoTutor = (String) request.getParameter("tutor.Apellido");
 		String respuesta = (String) request.getParameter("cancelar");
 		
 		
@@ -46,7 +46,7 @@ public class ControlTutor extends HttpServlet{
 		
 		
 		
-		if(nombreTutor == null || nombreTutor.isEmpty())
+		if(apellidoTutor == null || apellidoTutor.isEmpty())
 		{
 			if(respuesta == "cancelar")
 			{
@@ -68,9 +68,9 @@ public class ControlTutor extends HttpServlet{
 		{
 			Tutor tutor1 = new Tutor();
 			TutorBs b1 = new TutorBs();
-			tutor1.setNombre(nombreTutor);
+			tutor1.setPrimerapellido(apellidoTutor);
 			
-			String resp=b1.buscarTutor(tutor1);
+			String resp=b1.buscarTutorApellido(tutor1);
 			
 			if (resp=="existe")
 			{
@@ -95,4 +95,5 @@ public class ControlTutor extends HttpServlet{
 	
 
 }
+
 

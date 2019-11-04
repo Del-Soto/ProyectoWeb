@@ -24,7 +24,7 @@
           <br>
 
           <input type="submit" name="registrar" value="registrar">
-          <input type="submit" name="Cancelar" value="Cancelar" <a href="index.html"></a> >
+          
 
 
         </form>
@@ -34,4 +34,4 @@
     </article>
 
   </body>
-</html>ml>
+</html>

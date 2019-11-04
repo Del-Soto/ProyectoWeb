@@ -71,6 +71,33 @@ public class TutorBs {
 		
 	}
 	
+	public String buscarTutorApellido(Tutor tutor1)
+	{
+		String res="";
+		
+		TutorDao dao1 = new TutorDao();
+		Tutor tutor2 = new Tutor();
+		
+		tutor2= dao1.buscarTutorApelllido(tutor1);
+				
+		if ((tutor2.getNombre()!=null)&&(tutor2.getPrimerapellido()!=null)&&(tutor2.getSegundoapellido()!=null))
+		{
+			System.out.println("se encontro la siguiente coincidencia");
+			System.out.println("para el nombre se encontro: "+tutor2.getNombre());
+			nombreBusq=tutor2.getNombre();
+			System.out.println("para el primer apellido se encontro: "+tutor2.getPrimerapellido());
+			System.out.println("para el segundo apellido se encontro: "+tutor2.getSegundoapellido());
+			res="existe";
+		}
+		else
+		{
+			System.out.println("no existe");
+			res="no existe";
+		}
+		
+		return res;
+	}
+	
 
 	
 

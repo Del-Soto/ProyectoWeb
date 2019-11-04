@@ -10,13 +10,13 @@
   </head>
   <body>
     <header>
-      <h1>Busque_al_tutor por nombre</h1>
+      <h1>Busque_al_tutor por apellido</h1>
     </header>
 
     <article>
       <section id="buscaTutorSec">
-        <form action="buscaTutor" method="get" name="Busca Tutor">
-          <input type="text" name="tutor.Nombre" value="">
+        <form action="buscaTutorApellido" method="get" name="Busca Tutor">
+          <input type="text" name="tutor.Apellido" value="">
 		  <br>
 
           <input type="submit" name="consultarTutor" value="consultarTutor">

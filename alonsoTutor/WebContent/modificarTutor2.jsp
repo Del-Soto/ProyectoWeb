@@ -22,7 +22,7 @@
           <input type="text" name="tutor.segundoApellido" value="">
           <br>
           <input type="submit" name="guardar" value="guardar">
-          <input type="submit" name="Cancelar" value="Cancelar" <a href="index.html"></a> >
+          
         </form>
 
       </section>

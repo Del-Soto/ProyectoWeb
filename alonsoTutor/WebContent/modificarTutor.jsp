@@ -37,7 +37,7 @@ misesion.removeAttribute("codigo");
           <input type="text" name="tutor.nombre" value="">
           <br>
           <input type="submit" name="buscar" value="buscar">
-          <input type="submit" name="Cancelar" value="Cancelar" <a href="index.html"></a> >
+          
         </form>
 
       </section>

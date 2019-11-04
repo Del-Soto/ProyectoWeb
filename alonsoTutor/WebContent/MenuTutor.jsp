@@ -16,7 +16,9 @@
       <section>
 
         <form action="MenuTutor" method="get">
-          <input type="submit" name="buscarTutor" value="Buscar tutor">
+          <input type="submit" name="buscarTutorN" value="Buscar tutor por nombre">
+          <br>
+          <input type="submit" name="buscarTutorA" value="Buscar tutor por apellido">
           <br>
           <input type="submit" name="eliminarTutor" value="Eliminar tutor">
           <br>
