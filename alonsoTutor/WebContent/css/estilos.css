@@ -1,0 +1,175 @@
+*{	
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	background-image: url(../img/escuela1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.box-tabla{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	width: 1000px;
+	height: 500px;
+	margin: 30px 0px;
+	border-radius: 10px;
+	background: #fff; 
+	/*background-image: linear-gradient(to top, green, yellow);*/
+}
+
+.box-tabla header{
+	display: flex;
+	flex-direction: column;
+	align-self: stretch;
+	margin: 0px 0px;
+	padding: 10px 0px;
+	border-top-right-radius: 9px;
+	border-top-left-radius: 9px;
+	background-image: linear-gradient(to left, rgb(21,171,136), rgb(2,131,75));
+	color: #fff;
+}
+
+.box-tabla header h1{
+	align-self: center;
+	font-family: 'Rokkitt', serif;
+	font-size: 45px;
+}
+
+table{
+	align-self: center;
+	margin-top: 10px;
+	border-collapse: collapse;
+
+}
+
+table tr{
+	display: static;
+	height: 50px;
+}
+
+table tr th{
+	width: 100px;
+	padding: 5px 10px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 20px;
+}
+
+table tr td{
+	width: 100px;
+	padding: 5px 10px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 15px;
+}
+
+table tr td a{
+	padding: 8px 10px;
+	background: rgb(21,171,136);
+	text-decoration: none;
+	border-radius: 5px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 18px;
+	color: #fff;
+}
+
+table tr td a:hover{
+	background: rgb(2,131,75);
+}
+
+table tr .descripcion{
+	width: 400px;
+}
+
+
+
+.main-container{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	background: rgba(11,46,89,0.7);
+	height: 650px;
+	}
+
+.box-form{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	width: 400px;
+	height: 600px;
+	margin: 30px 0px;
+	border-radius: 10px;
+	background: #fff; 
+	/*background-image: linear-gradient(to top, green, yellow);*/
+}
+
+.box-form header{
+	display: flex;
+	flex-direction: column;
+	align-self: stretch;
+	margin: 0px 0px;
+	padding: 10px 0px;
+	border-top-right-radius: 9px;
+	border-top-left-radius: 9px;
+	background: rgb(2,131,75);
+	color: #fff;
+}
+
+.box-form header h1{
+	align-self: center;
+	font-family: 'Rokkitt', serif;
+	font-size: 40px;
+}
+
+.form{
+	display: flex;
+	flex-direction: column;
+	margin: 20px 20px;
+}
+
+.form input{
+	margin: 5px;
+	padding: 2px;
+	width: 250px;
+	color: #000;
+	border-style: none;
+	border-bottom: 1px solid #666;
+}
+
+.form input:focus{
+	border-bottom: 2.5px solid rgb(2,131,75);
+}
+
+.form label{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 16px;
+}
+
+.form select{
+	margin: 5px;
+	width: 270px;
+	color: rgb(2,131,75);
+	font-size: 16px;
+}
+
+#boton-form{
+	align-self: center;
+	margin-top: 30px;
+	padding: 5px;
+	width: 200px;
+	background: rgb(2,131,75);
+	color: #ffff;
+	border-style: none;
+	border-radius: 5px;
+	font-size: 18px;
+
+}
+
+#boton-form:hover{
+	background: rgb(21,171,136);
+}
+
+
+
