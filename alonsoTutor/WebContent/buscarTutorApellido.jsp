@@ -9,6 +9,20 @@
     <title>Buscar tutor por nombre</title>
   </head>
   <body>
+  <%
+HttpSession misesion=request.getSession();
+String codigo= "";
+codigo=(String)misesion.getAttribute("Respuesta");
+if(codigo!=null){
+	
+	out.write(codigo);
+	
+	}else{
+}
+
+misesion.removeAttribute(codigo);
+	
+%>
     <header>
       <h1>Busque_al_tutor por apellido</h1>
     </header>

@@ -28,12 +28,9 @@ public class TutorBs {
 				
 		if ((tutor2.getNombre()!=null)&&(tutor2.getPrimerapellido()!=null)&&(tutor2.getSegundoapellido()!=null))
 		{
-			System.out.println("se encontro la siguiente coincidencia");
-			System.out.println("para el nombre se encontro: "+tutor2.getNombre());
 			nombreBusq=tutor2.getNombre();
-			System.out.println("para el primer apellido se encontro: "+tutor2.getPrimerapellido());
-			System.out.println("para el segundo apellido se encontro: "+tutor2.getSegundoapellido());
-			res="existe";
+			res="Se encontro la siguiente coincidencia, Nombre:"+tutor2.getNombre()+" Primer Apellido: " + tutor2.getPrimerapellido() + " Segundo Apellido: " + tutor2.getSegundoapellido();
+			//System.out.println("Prueba: "+res);
 		}
 		else
 		{
@@ -51,7 +48,7 @@ public class TutorBs {
 		TutorDao dao2 = new TutorDao();
 		
 		int id = dao2.buscarUltimoReg();
-		System.out.println("Ultimo id registrado" + id);
+		//System.out.println("Ultimo id registrado" + id);
 		id++;
 		
 		String res = dao2.registrarTutor(tutor1, id);
@@ -82,12 +79,8 @@ public class TutorBs {
 				
 		if ((tutor2.getNombre()!=null)&&(tutor2.getPrimerapellido()!=null)&&(tutor2.getSegundoapellido()!=null))
 		{
-			System.out.println("se encontro la siguiente coincidencia");
-			System.out.println("para el nombre se encontro: "+tutor2.getNombre());
 			nombreBusq=tutor2.getNombre();
-			System.out.println("para el primer apellido se encontro: "+tutor2.getPrimerapellido());
-			System.out.println("para el segundo apellido se encontro: "+tutor2.getSegundoapellido());
-			res="existe";
+			res="<p>Se encontro la siguiente coincidencia, Nombre:"+tutor2.getNombre()+" Primer Apellido: " + tutor2.getPrimerapellido() + " Segundo Apellido: " + tutor2.getSegundoapellido()+"</p>";
 		}
 		else
 		{
