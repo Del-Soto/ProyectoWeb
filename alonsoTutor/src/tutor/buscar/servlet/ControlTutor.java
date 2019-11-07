@@ -72,14 +72,17 @@ public class ControlTutor extends HttpServlet{
 			
 			String resp=b1.buscarTutor(tutor1);
 			
-			if (resp=="existe")
+			if (resp!=null)
 			{
-				System.out.println("respuesta chida: "+resp);
+				//System.out.println("respuesta chida: "+resp);
+				misession.setAttribute("Respuesta", resp);
+				rd = request.getRequestDispatcher("buscarTutor.jsp");
+				rd.forward(request, response);
 				
 			}
 			else
 			{
-				System.out.println("respuesta no tan chida");
+				System.out.println("error");
 			}
 			
 			
